@@ -6,16 +6,24 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 25l5;
+  --main:206, 250, 5 ;
 }
+
+/*
 .clipdown {
   clip-path: polygon(0 0, 100% 0%, 100% 81%, 0% 100%);
 }
 .clipup {
   clip-path: polygon(0 19%, 100% 0, 100% 100%, 0% 100%);
-  margin-top: -300px;
 }
-.upclip{
-  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+.upclip {
+  clip-path: polygon(0 19%, 100% 0, 100% 100%, 0% 100%);
+}
+.updown {
+  clip-path: polygon(0 5%, 100% 0, 100% 81%, 0% 100%);
+}*/
+.whyclipimage{
+  clip-path: polygon(25% 0, 100% 0, 100% 87%, 75% 100%, 0 100%, 0 14%);
 }
 .stroketext {
   -webkit-text-stroke-width: 2px;
@@ -25,6 +33,10 @@
   line-height: normal;
   color: transparent;
 }
-.gradient1{
-  background: linear-gradient(72deg, #CEFA05 18.23%, rgba(206, 250, 5, 0.81) 100.16%);
+.gradient1 {
+  background: linear-gradient(
+    72deg,
+    #cefa05 18.23%,
+    rgba(206, 250, 5, 0.81) 100.16%
+  );
 }

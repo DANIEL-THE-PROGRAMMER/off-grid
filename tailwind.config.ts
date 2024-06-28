@@ -12,6 +12,9 @@ const config: Config = {
         lato: ["var(--font-lato)"],
         supr: ["var(--font-supr)"],
       },
+      colors: {
+        main: "rgba(var(--main), <alpha-value>)",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

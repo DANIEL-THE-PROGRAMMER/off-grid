@@ -3,6 +3,7 @@ import { Inter, Lato } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import { Nav } from "./components/views/nav";
+import { Footer } from "./components/views/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 const lato = Lato({
@@ -31,6 +32,7 @@ export default function RootLayout({
       <body className={`${lato.variable} ${supr.variable}`}>
         <Nav />
         {children}
+        <Footer />
       </body>
     </html>
   );
