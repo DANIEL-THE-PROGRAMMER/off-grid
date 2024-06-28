@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 25l5;
+}
+.clipdown {
+  clip-path: polygon(0 0, 100% 0%, 100% 81%, 0% 100%);
+}
+.clipup {
+  clip-path: polygon(0 19%, 100% 0, 100% 100%, 0% 100%);
+  margin-top: -300px;
+}
+.upclip{
+  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+}
+.stroketext {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #cefa05;
+  font-size: 170px;
+  font-weight: 400;
+  line-height: normal;
+  color: transparent;
+}
+.gradient1{
+  background: linear-gradient(72deg, #CEFA05 18.23%, rgba(206, 250, 5, 0.81) 100.16%);
+}
