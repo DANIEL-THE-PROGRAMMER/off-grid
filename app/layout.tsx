@@ -4,8 +4,9 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { Nav } from "./components/views/nav";
 import { Footer } from "./components/views/footer";
+import { Menu } from "./components/views/menu";
+import { MenuContextProvider } from "./context/menucontext";
 
-const inter = Inter({ subsets: ["latin"] });
 const lato = Lato({
   subsets: ["latin"],
   weight: ["400", "700", "900"],
@@ -13,7 +14,7 @@ const lato = Lato({
 });
 
 const supr = localFont({
-  src: "../public/fonts/unicode.futurab.ttf",
+  src: "../public/fonts/Futura Bold font.ttf",
   variable: "--font-supr",
 });
 
@@ -30,7 +31,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${lato.variable} ${supr.variable}`}>
-        <Nav />
+        <MenuContextProvider>
+          <Nav />
+          <Menu />
+        </MenuContextProvider>
         {children}
         <Footer />
       </body>

@@ -69,6 +69,36 @@ export const MenuBar = () => {
   );
 };
 
+export const MenuCloseBar = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="64"
+      height="64"
+      viewBox="0 0 64 64"
+      fill="none"
+    >
+      <circle cx="32" cy="32" r="30" stroke="white" stroke-width="2.5" />
+      <line
+        x1="21.1161"
+        y1="41.705"
+        x2="41.7054"
+        y2="21.1157"
+        stroke="white"
+        stroke-width="2.5"
+      />
+      <line
+        x1="21.8839"
+        y1="21.1161"
+        x2="42.4732"
+        y2="41.7054"
+        stroke="white"
+        stroke-width="2.5"
+      />
+    </svg>
+  );
+}
+
 export const OFFGRID = () => {
   return (
     <svg

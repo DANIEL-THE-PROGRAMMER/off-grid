@@ -15,7 +15,7 @@ const Header = () => {
           <div className="flex flex-col items-center">
             <div className="flex items-end">
               <div className="flex flex-col ">
-                <h1 className="stroketext font-supr italic tracking-[-12px]">
+                <h1 className="stroketext font-supr italic">
                   TRADIE
                 </h1>
                 <span className="flex flex-col tracking-[-1px] text-white leading-[38px] italic text-[34px] text-right font-supr font-[400] uppercase">
@@ -25,7 +25,7 @@ const Header = () => {
                 </span>
               </div>
               <div className="h-[95%]  w-[14px] bg-[#CEFA05] rotate-[11.5deg] ml-[101px] mr-[50px]"></div>
-              <h1 className="text-[170px] text-[#CEFA05] font-supr italic tracking-[-12px] flex flex-col leading-[1]">
+              <h1 className="text-[170px] text-[#CEFA05] font-supr italic flex flex-col leading-[1]">
                 <span>GROWTH</span>
                 <span>PARTNER</span>
               </h1>
