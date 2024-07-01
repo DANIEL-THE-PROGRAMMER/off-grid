@@ -63,3 +63,14 @@
     #fff 116.34%
   );
 }
+.gradient3 {
+  background: linear-gradient(
+    82deg,
+    rgba(206, 250, 5, 0.97) 1.83%,
+    rgba(206, 250, 5, 0.92) 93.13%
+  );
+}
+
+.gradient4{
+  background: linear-gradient(69deg, #000 56.09%, rgba(0, 0, 0, 0.51) 102.91%);
+}
