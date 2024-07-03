@@ -1,16 +1,17 @@
 "use client";
 
 import Link from "next/link";
-import { useMenuContext } from "../../context/menucontext";
+import { useGlobalContext } from "../../context/globalcontext";
+
+
+
 
 export const Menu = () => {
-  const { isOpen, setOpen } = useMenuContext();
-
-  if (!isOpen) return null;
+  const { isOpen, setOpen } = useGlobalContext();
 
   return (
     <>
-      <div className="fixed top-0 right-0 min-h-[100vh] left-0 z-20 bg-black">
+      <div className="menu fixed top-0 right-0  left-0 z-20 bg-black">
         <div className="relative w-full min-h-[100vh]">
           <div className="container mx-auto pt-[164px] flex flex-col justify-between min-h-[100vh]">
             <ul className="group flex flex-col w-full">
@@ -21,9 +22,9 @@ export const Menu = () => {
                     onClick={() => {
                       setTimeout(() => {
                         setOpen(!isOpen);
-                      },1000)
+                      }, 1000);
                     }}
-                    className="last:border-b-none last:border-b-transparent first:pt-0 py-[26px] border-b-[0.932px] border-b-[rgba(255,255,255,0.38)] italic font-supr text-[124.843px] font-bold leading-[0.9]"
+                    className="last:border-b-none last:border-b-transparent first:pt-0 py-[26px] border-b-[0.932px] border-b-[rgba(255,255,255,0.38)] italic font-supr text-[124.843px] font-bold leading-[0.9] links"
                   >
                     <Link href={`/${link.linkroute}`} className="menustroke">
                       {link.name}

@@ -5,7 +5,8 @@ import "./globals.css";
 import { Nav } from "./components/views/nav";
 import { Footer } from "./components/views/footer";
 import { Menu } from "./components/views/menu";
-import { MenuContextProvider } from "./context/menucontext";
+import { GlobalContextProvider } from "./context/globalcontext";
+import { TimelineProvider } from "./context/timelinecontext";
 
 const lato = Lato({
   subsets: ["latin"],
@@ -31,12 +32,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${lato.variable} ${supr.variable}`}>
-        <MenuContextProvider>
-          <Nav />
-          <Menu />
-        </MenuContextProvider>
-        {children}
-        <Footer />
+        <GlobalContextProvider>
+          <TimelineProvider>
+            <Nav  />
+            <Menu />
+          </TimelineProvider>
+          {children}
+          <Footer />
+        </GlobalContextProvider>
       </body>
     </html>
   );

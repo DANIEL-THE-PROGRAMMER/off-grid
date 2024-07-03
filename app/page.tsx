@@ -9,10 +9,12 @@ import { AboutOffGrid } from "./components/sections/about";
 import { Resources } from "./components/sections/resources";
 import { PerformanceCheck } from "./components/sections/performancecheck";
 import { Serve } from "./components/sections/whatweserve";
+import { Loader } from "./components/views/loader";
 
 export default function Home() {
   return (
     <>
+      <Loader />
       <Header />
       <Section>
         <SectionOne />
@@ -24,7 +26,6 @@ export default function Home() {
       <Resources />
       <PerformanceCheck />
       <Serve />
-      
     </>
   );
 }
