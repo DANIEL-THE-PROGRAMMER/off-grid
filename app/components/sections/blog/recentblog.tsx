@@ -1,4 +1,4 @@
-ssimport Image from "next/image";
+import Image from "next/image";
 
 export const RecentBlog = () => {
   return (
