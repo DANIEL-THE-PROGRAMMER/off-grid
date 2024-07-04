@@ -5,16 +5,18 @@ import { PerformanceCheck } from "../components/sections/performancecheck";
 import BlogHeader from "../components/views/blogheader";
 import { Loader } from "../components/views/loader";
 
+export default function Blog() {
+  return (
+    <>
+      <Loader />
+      <div className="relative z-[888]">
+        <BlogHeader />
 
-export default function Blog(){
-    return (
-        <>
-            <Loader />
-            <BlogHeader />
-            <RecentBlog />
-            <PopularBlog />
-            <OtherBlog />
-            <PerformanceCheck />
-        </>
-    )
+        <RecentBlog />
+        <PopularBlog />
+        <OtherBlog />
+        <PerformanceCheck />
+      </div>
+    </>
+  );
 }

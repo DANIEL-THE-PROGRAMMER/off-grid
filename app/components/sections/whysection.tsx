@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { ImageParallax } from "../imageparallax";
 
 export const WhySection = () => {
   return (
@@ -18,28 +19,31 @@ export const WhySection = () => {
               </span>
               <span>straight to the point</span>
             </h5>
-            <p className="text-black text-[24px] leading-[39px] font-lato whitespace-pre-line">{Texts}</p>
+            <p className="text-black text-[24px] leading-[39px] font-lato whitespace-pre-line">
+              {Texts}
+            </p>
           </div>
-          <div className="w-[50%] shrink-0 whyclipimage">
-            <Image
-              src="/assets/image 11.png"
-              layout="responsive"
-              alt=""
-              width={0}
-              height={0}
-              sizes="100vw"
-              style={{
-                width: "100%",
-                height: "auto",
-              }}
-            />
+          <div className="w-[50%] shrink-0 whyclipimage overflow-hidden">
+            <ImageParallax>
+              <Image
+                src="/assets/image 11.png"
+                layout="responsive"
+                alt=""
+                width={0}
+                height={0}
+                sizes="100vw"
+                style={{
+                  width: "100%",
+                  height: "auto",
+                }}
+              />
+            </ImageParallax>
           </div>
         </div>
       </div>
     </>
   );
 };
-
 
 const Texts = `
 1. We’re Australian based

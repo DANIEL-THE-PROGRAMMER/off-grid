@@ -11,13 +11,15 @@ export default function AdvanceGrowth() {
   return (
     <>
       <Loader />
-      <AdvanceHeader />
-      <AdvanceSectionOne />
-      <Booking />
-      <OurMarket />
-      <SalesFunnel />
-      <ExplainedAgs />
-      <PerformanceCheck />
+      <div className="relative z-[888]">
+        <AdvanceHeader />
+        <AdvanceSectionOne />
+        <Booking />
+        <OurMarket />
+        <SalesFunnel />
+        <ExplainedAgs />
+        <PerformanceCheck />
+      </div>
     </>
   );
 }

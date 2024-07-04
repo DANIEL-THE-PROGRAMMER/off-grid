@@ -37,8 +37,8 @@ export const HeaderWrapper = ({ children} : { children: React.ReactNode } ) => {
   
 
     return (
-        <>
+        <div className="relative z-[888]">
             {children}
-        </>
+        </div>
     )
 }

@@ -6,8 +6,10 @@ export default function Ebook() {
   return (
     <>
       <Loader />
-      <EbookHeader />
-      <DoSection />
+      <div className="relative z-[888]">
+        <EbookHeader />
+        <DoSection />
+      </div>
     </>
   );
 }

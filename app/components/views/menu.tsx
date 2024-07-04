@@ -9,6 +9,8 @@ import { useGlobalContext } from "../../context/globalcontext";
 export const Menu = () => {
   const { isOpen, setOpen } = useGlobalContext();
 
+  
+
   return (
     <>
       <div className="menu fixed top-0 right-0  left-0 z-20 bg-black">

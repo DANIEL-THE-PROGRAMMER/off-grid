@@ -1,5 +1,7 @@
 
 import Image from "next/image";
+import { ImageParallax } from "../imageparallax";
+import { TextWrapper } from "../textwrapper";
 
 export const SectionOne = () => {
     return (
@@ -7,28 +9,32 @@ export const SectionOne = () => {
         <div className="flex items-end ">
           <div className="flex flex-col p-[108px] pr-[10px] grow min-h-[200px] bg-[#CEFA05] uppercase">
             <div className="bg-black py-[10px]">
-              <h3 className="text-white font-supr text-[57.839px] text-center">
-                Alex Dickinson
+              <h3 className="font-supr text-[57.839px] text-center">
+                <TextWrapper fg={`#fff`}>Alex Dickinson</TextWrapper>
               </h3>
             </div>
-            <span className="flex flex-col font-supr text-black text-[57.839px]  text-right italic">
-              <span>message from our</span>
-              <span>Founder and Head </span>
-              <span>of Development, </span>
+            <span className="flex flex-col font-supr text-[57.839px]  text-right italic">
+              <TextWrapper fg={`black`}>message from our</TextWrapper>
+              <TextWrapper fg={`black`}>Founder and Head </TextWrapper>
+              <TextWrapper fg={`black`}>of Development, </TextWrapper>
             </span>
           </div>
           <div className="w-[50%] h-[90vh] bg-[#CEFA05] flex justify-center  shrink-0">
-            <div className="h-full relative w-[92%]">
-              <Image src="/assets/image 50.png" alt="" fill sizes="100vw" />
+            <div className="h-full relative w-[92%] overflow-hidden">
+              <ImageParallax>
+                <Image src="/assets/image 50.png" alt="" fill sizes="100vw" />
+              </ImageParallax>
             </div>
           </div>
         </div>
         <div className="mt-[71px]">
-          <p className="flex whitespace-pre-line text-white font-semibold text-[20px] font-lato leading-[32.8px]">
-            {WrittenText}
+          
+          <p className="flex whitespace-pre-lin font-semibold text-[20px] font-lato leading-[32.8px]">
+            <TextWrapper fg={`white`}>{WrittenText}</TextWrapper>
           </p>
-          <span className="text-[28px] text-[#CEFA05] font-bold leading-[45.92px] mt-[33px] inline-block">
-            Read less..
+          <span className="text-[28px] font-bold leading-[45.92px] mt-[33px] inline-block">
+            <TextWrapper fg={`#CEFA05`}>Read less..</TextWrapper>
+            
           </span>
         </div>
       </div>

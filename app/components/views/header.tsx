@@ -2,11 +2,9 @@
 
 import Image from "next/image";
 
-import { useEffect } from "react";
-import SplitType from "split-type";
-import gsap from "gsap";
-import { useGlobalContext } from "@/app/context/globalcontext";
 import { HeaderWrapper } from "../headerwrapper";
+import {ImageParallax} from "../imageparallax"
+
 
 const Header = () => {
   
@@ -16,13 +14,20 @@ const Header = () => {
       <HeaderWrapper>
         <div className="min-h-[80vh] clipdown relative z-10 page-main">
           <div className="absolute z-20 top-0 right-0 left-0 bottom-0 bg-black/[0.8]"></div>
-          <Image
-            src="/assets/iStock-1306636610-min 1.png"
-            alt=""
-            className="z-10"
-            fill
-            priority
-          />
+          <div className="absolute w-full h-full top-0 left-0">
+            <div className="relative w-full h-full overflow-hidden">
+              <ImageParallax>
+                <Image
+                  src="/assets/iStock-1306636610-min 1.png"
+                  alt=""
+                  className="z-10"
+                  fill
+                  priority
+                />
+              </ImageParallax>
+            </div>
+          </div>
+
           <div className="w-full relative z-40 pt-[140px] pb-[244px] flex justify-center ">
             <div className="flex flex-col items-center">
               <div className="flex">

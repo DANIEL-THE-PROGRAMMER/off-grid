@@ -16,16 +16,18 @@ export default function Home() {
     <>
       <Loader />
       <Header />
-      <Section>
-        <SectionOne />
-      </Section>
-      <LetsGetSerious />
-      <WhySection />
-      <DoSection />
-      <AboutOffGrid />
-      <Resources />
-      <PerformanceCheck />
-      <Serve />
+      <div className="relative z-[888]">
+        <Section>
+          <SectionOne />
+        </Section>
+        <LetsGetSerious />
+        <WhySection />
+        <DoSection />
+        <AboutOffGrid />
+        <Resources />
+        <PerformanceCheck />
+        <Serve />
+      </div>
     </>
   );
 }

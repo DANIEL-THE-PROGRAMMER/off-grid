@@ -17,6 +17,10 @@ export const TimelineProvider = ({ children }: { children: ReactNode }) => {
   } });
 
   useEffect(() => {
+    timeline.from(".menu",{
+        duration: 1,
+        y:"-100%"
+    })
     timeline.to(".menu", {
       duration: 1,
       opacity: 1,
@@ -34,9 +38,11 @@ export const TimelineProvider = ({ children }: { children: ReactNode }) => {
       },
       "-=0.5"
     );
+
+    
+  timeline.reverse();
   }, [timeline]);
 
-  timeline.reverse()
 
   return (
     <TimelineContext.Provider value={{ timeline }}>

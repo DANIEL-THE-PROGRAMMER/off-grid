@@ -7,6 +7,7 @@ import { Footer } from "./components/views/footer";
 import { Menu } from "./components/views/menu";
 import { GlobalContextProvider } from "./context/globalcontext";
 import { TimelineProvider } from "./context/timelinecontext";
+import { SmoothScrollbar } from "./components/smoothscroll";
 
 const lato = Lato({
   subsets: ["latin"],
@@ -32,14 +33,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${lato.variable} ${supr.variable}`}>
-        <GlobalContextProvider>
-          <TimelineProvider>
-            <Nav  />
-            <Menu />
-          </TimelineProvider>
-          {children}
-          <Footer />
-        </GlobalContextProvider>
+        <SmoothScrollbar>
+          <GlobalContextProvider>
+            <TimelineProvider>
+              <Nav />
+              <Menu />
+            </TimelineProvider>
+            {children}
+            <Footer />
+          </GlobalContextProvider>
+        </SmoothScrollbar>
       </body>
     </html>
   );

@@ -8,10 +8,13 @@ export const Loader = () => {
   const { setLoadingComplete } = useGlobalContext();
 
   useEffect(() => {
-    setLoadingComplete(false)
-    const tl = gsap.timeline({ paused: true, onComplete: () => {
-      setLoadingComplete(true);
-    } });
+    setLoadingComplete(false);
+    const tl = gsap.timeline({
+      paused: true,
+      onComplete: () => {
+        setLoadingComplete(true);
+      },
+    });
 
     tl.to(".panels .panel:first-child, .panels .panel:last-child", {
       scaleY: 1,
@@ -39,13 +42,16 @@ export const Loader = () => {
           duration: 1,
         },
         "-=0.3"
-      );
+      )
+      .to(".panels", {
+        zIndex: "0",
+      });
     tl.play();
   }, []);
 
   return (
     <>
-      <div className="panels z-[100000]">
+      <div className="panels">
         <li className="panel"></li>
         <li className="panel"></li>
         <li className="panel"></li>
