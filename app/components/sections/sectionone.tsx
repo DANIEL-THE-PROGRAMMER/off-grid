@@ -30,7 +30,7 @@ export const SectionOne = () => {
         <div className="mt-[71px]">
           
           <p className="flex whitespace-pre-lin font-semibold text-[20px] font-lato leading-[32.8px]">
-            <TextWrapper fg={`white`}>{WrittenText}</TextWrapper>
+            {WrittenText}
           </p>
           <span className="text-[28px] font-bold leading-[45.92px] mt-[33px] inline-block">
             <TextWrapper fg={`#CEFA05`}>Read less..</TextWrapper>

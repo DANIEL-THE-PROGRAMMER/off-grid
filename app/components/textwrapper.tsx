@@ -52,7 +52,11 @@ export const TextWrapper = ({
   }, []);
 
   return (
-    <span className="reveal-type " data-bg-color={`#CCCCCC`} data-fg-color={fg}>
+    <span
+      className="reveal-type whitespace-pre-line"
+      data-bg-color={`#CCCCCC`}
+      data-fg-color={fg}
+    >
       {children}
     </span>
   );

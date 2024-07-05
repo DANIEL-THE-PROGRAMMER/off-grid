@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { TextWrapper } from "../textwrapper";
 
 export const AboutOffGrid = () => {
   return (
@@ -14,7 +15,7 @@ export const AboutOffGrid = () => {
         <div className="pt-[178px] pb-[191px] mx-auto container flex z-20  relative gap-[110px] items-center">
           <div className="w-[50%] flex flex-col items-start">
             <h3 className="text-black font-supr text-[74px] italic leading-[81px] uppercase ">
-              About off grid
+              <TextWrapper fg="black">About off grid</TextWrapper>
             </h3>
             <div className="my-[33px]">
               <p className="text-[20px] font-lato text-black leading-[21px] whitespace-pre-line">{`
@@ -38,8 +39,8 @@ Off Grid Digital would be the GO-TO Growth Partner for any Tradie looking to sca
 
 So what does this mean for you?`}</p>
             </div>
-            <button className="min-h-[61px] text-[20px] font-lato leading-[31px] font-bold inline-block justify-center items-center px-[32px] bg-black outline-none border-none  rounded-[10px] text-white">
-              Heres our promise
+            <button className="min-h-[61px] text-[20px] font-lato leading-[31px] font-bold inline-block justify-center items-center px-[32px] bg-black outline-none border-none  rounded-[10px] ">
+              <TextWrapper fg="white">Heres our promise</TextWrapper>
             </button>
           </div>
           <div className="w-[50%] shrink-0 ">

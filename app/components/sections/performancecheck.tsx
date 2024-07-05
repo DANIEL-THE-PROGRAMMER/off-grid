@@ -1,3 +1,4 @@
+import { TextWrapper } from "../textwrapper";
 
 
 export const PerformanceCheck = () => {
@@ -6,8 +7,16 @@ export const PerformanceCheck = () => {
         <div className="bg-white">
           <div className="py-[200px]">
             <h3 className="flex flex-col leading-[106px] italic text-[64px] font-supr items-center">
-              <span>Do you think your website could be doing better?</span>
-              <span>Check with our Free website Performance Test</span>
+              <span>
+                <TextWrapper fg="black">
+                  Do you think your website could be doing better?
+                </TextWrapper>
+              </span>
+              <span>
+                <TextWrapper fg="black">
+                  Check with our Free website Performance Test
+                </TextWrapper>
+              </span>
             </h3>
             <div className="flex flex-col mt-[29px] mx-auto container px-[100px]">
               <div className="flex flex-col gap-[36px]">
@@ -32,7 +41,9 @@ export const PerformanceCheck = () => {
                   />
                 </div>
               </div>
-              <button className="mt-[54px] min-h-[65px] w-full rounded-[10px] bg-main text-black uppercase border-none text-[23px] font-extrabold font-lato flex justify-center items-center">Next</button>
+              <button className="mt-[54px] min-h-[65px] w-full rounded-[10px] bg-main text-black uppercase border-none text-[23px] font-extrabold font-lato flex justify-center items-center">
+                Next
+              </button>
             </div>
           </div>
         </div>

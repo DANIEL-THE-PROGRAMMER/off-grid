@@ -1,16 +1,25 @@
 import Image from "next/image";
+import { TextWrapper } from "../textwrapper";
+import { ImageParallax } from "../imageparallax";
 
 export const DoSection = () => {
   return (
     <>
       <div className="relative pt-[274px] pb-[354px]">
-        <Image
-          src="/assets/sec-BG.png"
-          alt=""
-          fill
-          sizes="100vw"
-          className=""
-        />
+        <div className="absolute w-full h-full top-0 left-0">
+          <div className="relative w-full h-full overflow-hidden">
+            <ImageParallax>
+              <Image
+                src="/assets/sec-BG.png"
+                alt=""
+                className="z-10"
+                fill
+                priority
+              />
+            </ImageParallax>
+          </div>
+        </div>
+
         <div className="container mx-auto flex items-center relative z-20">
           <div className="w-[50%] shrink-0 ">
             <Image
@@ -28,12 +37,27 @@ export const DoSection = () => {
           </div>
           <div className="w-[50%] shrink-0 flex flex-col">
             <h2 className="text-[62px] uppercase font-supr leading-[103px] italic ">
-              Rather do-it-yourself?{" "}
+              <TextWrapper fg="black">Rather do-it-yourself? </TextWrapper>
             </h2>
-            <p className="flex flex-col italic text-[35px] leading-[55px] text-black font-supr mt-[15px]">
-              <span>10X your results with this guide on</span>
-              <span>Hunting down leads and winning them</span>
-              <span>as clients....it’s totally FREE</span>
+            <p className="flex flex-col italic text-[35px] leading-[55px] font-supr mt-[15px]">
+              <span>
+                {" "}
+                <TextWrapper fg="black">
+                  your results with this guide on
+                </TextWrapper>
+              </span>
+              <span>
+                {" "}
+                <TextWrapper fg="black">
+                  Hunting down leads and winning them{" "}
+                </TextWrapper>
+              </span>
+              <span>
+                {" "}
+                <TextWrapper fg="black">
+                  as clients....it{"'"}s totally FREE{" "}
+                </TextWrapper>
+              </span>
             </p>
             <div className="mt-[52px] flex flex-col gap-[30px]">
               <div className="flex items-center gap-[36px]">
@@ -61,8 +85,8 @@ export const DoSection = () => {
                 />
               </div>
             </div>
-            <button className="bg-main text-black min-h-[68px] flex justify-center items-center w-full rounded-[10px] font-lato leading-[36px] font-extrabold text-[23px] mt-[64px]">
-              I WANT IT NOW
+            <button className="bg-main  min-h-[68px] flex justify-center items-center w-full rounded-[10px] font-lato leading-[36px] font-extrabold text-[23px] mt-[64px]">
+              <TextWrapper fg="black">I WANT IT NOW</TextWrapper>
             </button>
           </div>
         </div>

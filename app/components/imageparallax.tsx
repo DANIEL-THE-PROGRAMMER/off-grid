@@ -22,7 +22,7 @@ export const ImageParallax = ({ children }: { children: React.ReactNode }) => {
               trigger: parent,
               start: "top top",
               end: "bottom top",
-              scrub: 1,
+              scrub: !0,
             },
           });
         }

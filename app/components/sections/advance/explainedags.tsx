@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { TextWrapper } from "../../textwrapper";
 
 export const ExplainedAgs = () => {
   return (
@@ -9,7 +10,9 @@ export const ExplainedAgs = () => {
           <div className="container mx-auto items-center">
             <div className="flex flex-col items-center">
               <h3 className="uppercase italic text-[74px] font-supr">
+                <TextWrapper fg="black">
                 Ours AGS Explained
+                </TextWrapper>
               </h3>
               <p className="whitespace-pre-line text-[28px] font-lato leading-[34px] text-center px-[80px]">{`
               Our Advanced Growth System, is a custom made strategy that utilises a combination of inbound and outbound marketing tactics. Our objective is to take you from invisible to visible in the online space and get your business in front of hungry prospects currently looking for your services.

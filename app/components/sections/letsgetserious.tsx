@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { TextWrapper } from "../textwrapper";
 
 export const LetsGetSerious = () => {
   return (
@@ -19,14 +20,14 @@ export const LetsGetSerious = () => {
           </div>
           <div className="absolute bottom-0 w-full h-full bg-black"></div>
           <div className="mb-[54px] relative z-20">
-            <h3 className="text-[74px] font-supr italic text-white text-center uppercase">
-              Let{"'"}s get serious
+            <h3 className="text-[74px] font-supr italic text-center uppercase">
+              <TextWrapper fg="white">Let{"'"}s get serious</TextWrapper>
             </h3>
           </div>
           <div className="flex gap-[92px] relative z-20 container mx-auto">
             <div className="w-[50%] p-[65px] bg-main flex flex-col items-center">
               <h3 className="text-[80px] font-supr italic text-black uppercase text-center">
-                instagram
+                <TextWrapper fg="black">instagram</TextWrapper>
               </h3>
               <div className="relative h-[501px] w-full mt-[20px]">
                 <Image
@@ -40,18 +41,42 @@ export const LetsGetSerious = () => {
                 />
               </div>
               <div className="mt-[50px]">
-                <span className="flex flex-col text-black leading-[36px] text-[27px] font-lato items-center font-bold">
-                  <span>The one Instagram CHANNEL</span>
-                  <span>you need to be following</span>
+                <span className="flex flex-col leading-[36px] text-[27px] font-lato items-center font-bold">
+                  <span>
+                    {" "}
+                    <TextWrapper fg="black">
+                      The one Instagram CHANNEL
+                    </TextWrapper>
+                  </span>
+                  <span>
+                    <TextWrapper fg="black">
+                      you need to be following
+                    </TextWrapper>
+                  </span>
                 </span>
               </div>
               <div className="mt-[24px]">
-                <span className="flex flex-col text-black text-[20px] font-lato items-center font-normal leading-[29px]">
-                  <span>We post 7 days a week, so if you want </span>
-                  <span>to learn something, market</span>
-                  <span>independently and figure things out </span>
-
-                  <span>yourself. Give us a followL</span>
+                <span className="flex flex-col  text-[20px] font-lato items-center font-normal leading-[29px]">
+                  <span>
+                    <TextWrapper fg="black">
+                      We post 7 days a week, so if you want{" "}
+                    </TextWrapper>
+                  </span>
+                  <span>
+                    <TextWrapper fg="black">
+                      to learn something, market
+                    </TextWrapper>
+                  </span>
+                  <span>
+                    <TextWrapper fg="black">
+                      independently and figure things out{" "}
+                    </TextWrapper>
+                  </span>
+                  <span>
+                    <TextWrapper fg="black">
+                      yourself. Give us a followL
+                    </TextWrapper>
+                  </span>
                 </span>
               </div>
               <button className="outline-none border-none bg-black text-main font-lato font-bold leading-[31px] min-w-[215px] px-[35px] min-h-[63px] flex justify-center items-center rounded-[10px] mt-[48px]">
@@ -59,8 +84,8 @@ export const LetsGetSerious = () => {
               </button>
             </div>
             <div className="w-[50%] p-[65px] bg-main flex flex-col items-center">
-              <h3 className="text-[80px] font-supr italic text-black uppercase text-center">
-                AGS
+              <h3 className="text-[80px] font-supr italic uppercase text-center">
+                <TextWrapper fg="black">AGS</TextWrapper>
               </h3>
               <div className="relative h-[501px] w-full mt-[20px]">
                 <Image
@@ -74,23 +99,42 @@ export const LetsGetSerious = () => {
                 />
               </div>
               <div className="mt-[50px]">
-                <span className="flex flex-col text-black leading-[36px] text-[27px] font-lato items-center font-bold">
-                  <span>Now this is where the</span>
-                  <span>magic happens</span>
-                </span>
-              </div>
-              <div className="mt-[24px]">
-                <span className="flex flex-col text-black text-[20px] font-lato items-center font-normal leading-[29px]">
-                  <span>Now this is where the magic happens...</span>
-                  <span>Ever heard of a strategy deployed so</span>
-                  <span>effectively that it literally...</span>
+                <span className="flex flex-col leading-[36px] text-[27px] font-lato items-center font-bold">
                   <span>
-                    Targets your {"'"}ideal client{"'"},{" "}
+                    <TextWrapper fg="black">Now this is where the</TextWrapper>
+                  </span>
+                  <span>
+                    <TextWrapper fg="black">magic happens</TextWrapper>
                   </span>
                 </span>
               </div>
-              <button className="outline-none border-none bg-black text-main font-lato font-bold leading-[31px] min-w-[215px] px-[35px] min-h-[63px] flex justify-center items-center rounded-[10px] mt-[48px]">
-                Read more
+              <div className="mt-[24px]">
+                <span className="flex flex-col text-[20px] font-lato items-center font-normal leading-[29px]">
+                  <span>
+                    <TextWrapper fg="black">
+                      Now this is where the magic happens...
+                    </TextWrapper>
+                  </span>
+                  <span>
+                    <TextWrapper fg="black">
+                      Ever heard of a strategy deployed so
+                    </TextWrapper>
+                  </span>
+                  <span>
+                    <TextWrapper fg="black">
+                      effectively that it literally...
+                    </TextWrapper>
+                  </span>
+                  <span>
+                    <TextWrapper fg="black">
+                      Targets your {"'"}ideal client{"'"},{" "}
+                    </TextWrapper>
+                  </span>
+                </span>
+              </div>
+              <button className="outline-none border-none text-main font-lato font-bold leading-[31px] min-w-[215px] px-[35px] min-h-[63px] flex justify-center items-center rounded-[10px] mt-[48px]">
+                <TextWrapper fg="black">
+                  Read more</TextWrapper>
               </button>
             </div>
           </div>
