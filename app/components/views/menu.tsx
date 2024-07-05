@@ -13,7 +13,7 @@ export const Menu = () => {
 
   return (
     <>
-      <div className="menu fixed top-0 right-0  left-0 z-20 bg-black">
+      <div className="menu  bg-black">
         <div className="relative w-full min-h-[100vh]">
           <div className="container mx-auto pt-[164px] flex flex-col justify-between min-h-[100vh]">
             <ul className="group flex flex-col w-full">

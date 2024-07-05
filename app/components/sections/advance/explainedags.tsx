@@ -10,9 +10,7 @@ export const ExplainedAgs = () => {
           <div className="container mx-auto items-center">
             <div className="flex flex-col items-center">
               <h3 className="uppercase italic text-[74px] font-supr">
-                <TextWrapper fg="black">
-                Ours AGS Explained
-                </TextWrapper>
+                <TextWrapper fg="black">Ours AGS Explained</TextWrapper>
               </h3>
               <p className="whitespace-pre-line text-[28px] font-lato leading-[34px] text-center px-[80px]">{`
               Our Advanced Growth System, is a custom made strategy that utilises a combination of inbound and outbound marketing tactics. Our objective is to take you from invisible to visible in the online space and get your business in front of hungry prospects currently looking for your services.
@@ -44,7 +42,7 @@ Our nurturing systems of email and social media strategy are also tools we utili
                       )}
                       <div className="w-[50%] flex flex-col items-left">
                         <span className="text-[100px] font-supr italic leading-[1]">
-                          {arg.title}
+                          <TextWrapper fg="black">{arg.title}</TextWrapper>
                         </span>
                         <button className="outline-none rounded-[14px] min-h-[91px] px-[41px] py-[16px]  bg-main text-black w-[271px] flex items-center justify-center text-[36px] font-lato mt-[30px]">
                           Read more..
@@ -84,7 +82,7 @@ Our nurturing systems of email and social media strategy are also tools we utili
                 <div className="bg-white flex p-[76px] gap-[100px] items-center ">
                   <div className="w-[50%] flex flex-col items-left">
                     <span className="text-[100px] font-supr italic leading-[1]">
-                      Branding
+                      <TextWrapper fg="black">Branding</TextWrapper>
                     </span>
                     <button className="outline-none rounded-[14px] min-h-[91px] px-[41px] py-[16px]  bg-main text-black w-[271px] flex items-center justify-center text-[36px] font-lato mt-[30px]">
                       Read more..
@@ -136,7 +134,13 @@ Our nurturing systems of email and social media strategy are also tools we utili
                 </div>
                 <div className="container mx-auto">
                   <div className="relative bg-black p-[79px]">
-                    <Image className="absolute right-[-100px]"  src="/assets/Construction-Helmet-Mockup 1.png" alt="" width={401} height={215} />
+                    <Image
+                      className="absolute right-[-100px]"
+                      src="/assets/Construction-Helmet-Mockup 1.png"
+                      alt=""
+                      width={401}
+                      height={215}
+                    />
                     <div className="flex flex-col">
                       <h2 className="text-main text-[52px] font-bold italic leading-[58px] font-supr uppercase">
                         The benefits of a profesional brand identity

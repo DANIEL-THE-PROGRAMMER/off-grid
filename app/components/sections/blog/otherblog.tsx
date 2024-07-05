@@ -1,13 +1,14 @@
 
 import Image from "next/image";
+import { TextWrapper } from "../../textwrapper";
 
 export const OtherBlog = () => {
   return (
     <>
       <div className="relative bg-main">
         <div className="pt-[210px] pb-[260px] relative z-20">
-          <h2 className="font-supr text-center italic text-[74px] uppercase text-black">
-            other blogs
+          <h2 className="font-supr text-center italic text-[74px] uppercase">
+            <TextWrapper fg="black">other blogs</TextWrapper>
           </h2>
           <div className="mt-[68px]">
             <div className="container mx-auto flex flex-col gap-[46px]">

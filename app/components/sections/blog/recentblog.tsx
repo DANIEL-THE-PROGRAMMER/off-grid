@@ -1,12 +1,13 @@
 import Image from "next/image";
+import { TextWrapper } from "../../textwrapper";
 
 export const RecentBlog = () => {
   return (
     <>
       <div className="bg-main">
         <div className="pt-[210px] pb-[260px]">
-          <h2 className="font-supr text-center text-black italic text-[74px] uppercase">
-            Recent blogs
+          <h2 className="font-supr text-center  italic text-[74px] uppercase">
+            <TextWrapper fg="black">Recent blogs</TextWrapper>
           </h2>
           <div className="mt-[68px]">
             <div className="container mx-auto flex flex-col gap-[46px]">
@@ -23,8 +24,11 @@ export const RecentBlog = () => {
                     }}
                   />
                   <div className="bg-black p-[44px] flex flex-col">
-                    <h4 className="uppercase text-white italic leading-[39px] fpmt-supr text-[39px] font-bold ">
-                      THis is our first blog
+                    <h4 className="uppercase italic leading-[39px] fpmt-supr text-[39px] font-bold ">
+                      <TextWrapper fg="white">
+                        {" "}
+                        THis is our first blog
+                      </TextWrapper>
                     </h4>
                     <p className="text-base font-lato leading-[23px] text-white/[0.66] pt-[7px] pb-[18px]">
                       Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor
@@ -62,8 +66,11 @@ export const RecentBlog = () => {
                     }}
                   />
                   <div className="bg-black p-[44px] flex flex-col">
-                    <h4 className="uppercase text-white italic leading-[39px] fpmt-supr text-[39px] font-bold">
-                      THis is our first blog
+                    <h4 className="uppercase italic leading-[39px] fpmt-supr text-[39px] font-bold">
+                      <TextWrapper fg="white">
+                        {" "}
+                        THis is our first blog
+                      </TextWrapper>
                     </h4>
                     <p className="text-base font-lato leading-[23px] text-white/[0.66] pt-[7px] pb-[18px]">
                       Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor
@@ -105,8 +112,11 @@ export const RecentBlog = () => {
                         }}
                       />
                       <div className="bg-black p-[44px] flex flex-col">
-                        <h4 className="uppercase text-white italic leading-[39px] fpmt-supr text-[39px] font-bold">
-                          THis is our first blog
+                        <h4 className="uppercase italic leading-[39px] fpmt-supr text-[39px] font-bold">
+                          <TextWrapper fg="white">
+                            {" "}
+                            THis is our first blog
+                          </TextWrapper>
                         </h4>
                         <p className="text-base font-lato leading-[23px] text-white/[0.66] pt-[7px] pb-[18px]">
                           Lorem ipsum dolor sit amet, consectetur Lorem ipsum

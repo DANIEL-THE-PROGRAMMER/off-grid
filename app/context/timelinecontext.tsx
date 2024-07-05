@@ -1,6 +1,7 @@
 "use client";
 import { createContext, useContext, ReactNode, useEffect } from "react";
 import gsap from "gsap";
+import { useGlobalContext } from "./globalcontext";
 
 interface TimelineContextType {
   timeline: gsap.core.Timeline;
@@ -12,15 +13,13 @@ const TimelineContext = createContext<TimelineContextType | undefined>(
 
 export const TimelineProvider = ({ children }: { children: ReactNode }) => {
   const timeline = gsap.timeline({ paused: true, onComplete: () => {
-    const menu = document.querySelector(".menu") as HTMLElement
-    if(menu) menu.style.zIndex="0"
+    /*const menu = document.querySelector(".menu") as HTMLElement
+    if(menu) menu.style.zIndex="0"*/
   } });
 
+  const { isOpen } = useGlobalContext();
+
   useEffect(() => {
-    timeline.from(".menu",{
-        duration: 1,
-        y:"-100%"
-    })
     timeline.to(".menu", {
       duration: 1,
       opacity: 1,
@@ -39,9 +38,8 @@ export const TimelineProvider = ({ children }: { children: ReactNode }) => {
       "-=0.5"
     );
 
-    
-  timeline.reverse();
-  }, [timeline]);
+    //timeline.reverse();
+  }, [timeline, isOpen]);
 
 
   return (
