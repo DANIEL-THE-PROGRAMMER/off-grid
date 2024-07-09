@@ -87,13 +87,16 @@
 }
 
 .menu{
-  position: absolute;
-		width: 100%;
-		top: 100%;
-		left: 0;
-		z-index: -1;
+  position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+  width:100%;
+  height:100%;
+	z-index: 999;
   opacity: 0;
-  height: 0;
+  height:100vh;
+  transform:translate(0, -100%);
 }
 
 .panels {
@@ -104,7 +107,7 @@
   height: 100%;
   transform: translateX(-50%) skewX(-35deg);
   clip-path: circle(100%);
-  z-index: 999;
+  z-index: 9999;
   background: black;
 }
 

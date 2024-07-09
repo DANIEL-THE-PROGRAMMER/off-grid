@@ -2,18 +2,46 @@
 
 import Link from "next/link";
 import { useGlobalContext } from "../../context/globalcontext";
-
-
-
+import { Nav } from "./nav";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
 
 export const Menu = () => {
   const { isOpen, setOpen } = useGlobalContext();
 
-  
+  const tl = useRef(gsap.timeline({ paused: true }));
+
+  useEffect(() => {
+    tl.current.to(".menu", {
+      duration: 1,
+      opacity: 1,
+      ease: "expo.inOut",
+      y: 0,
+    });
+    tl.current.to(
+      ".links",
+      {
+        duration: 1,
+        opacity: 1,
+        y: 0,
+        stagger: 0.1,
+        ease: "expo.inOut",
+      },
+      "-=0.5"
+    );
+  }, []);
+
+  useEffect(() => {
+    if (isOpen) {
+      tl.current.play();
+    } else {
+      tl.current.reverse();
+    }
+  }, [isOpen]);
 
   return (
     <>
-      <div className="menu  bg-black">
+      <div className="menu bg-black">
         <div className="relative w-full min-h-[100vh]">
           <div className="container mx-auto pt-[164px] flex flex-col justify-between min-h-[100vh]">
             <ul className="group flex flex-col w-full">
@@ -26,7 +54,7 @@ export const Menu = () => {
                         setOpen(!isOpen);
                       }, 1000);
                     }}
-                    className="last:border-b-none last:border-b-transparent first:pt-0 py-[26px] border-b-[0.932px] border-b-[rgba(255,255,255,0.38)] italic font-supr text-[124.843px] font-bold leading-[0.9] links"
+                    className="last:border-b-none last:border-b-transparent first:pt-0 py-[26px] border-b-[0.932px] border-b-[rgba(255,255,255,0.38)] italic font-supr text-[124.843px] font-bold leading-[0.9] links translate-y-[20px] opacity-0 transition-colors hover:text-main"
                   >
                     <Link href={`/${link.linkroute}`} className="menustroke">
                       {link.name}
