@@ -22,17 +22,17 @@ export const Serve = () => {
             </div>
           </div>
 
-          <div className="py-[266px] relative z-20">
-            <h3 className="text-[74px] font-supr italic text-center mb-[66px]">
+          <div className="ms:py-[266px] py-[100px] relative z-20">
+            <h3 className="text-[48px] md:text-[74px] font-supr italic text-center mb-[66px]">
               <TextWrapper fg="black">
                 We serve with Pride
               </TextWrapper>
             </h3>
-            <div className="flex container mx-auto gap-[15px]">
+            <div className="flex md:flex-row flex-col container mx-auto gap-[15px] md:px-0 px-[100px]">
               {ServesImages.map((image: string, index: number) => {
                 return (
                   <div
-                    className="grow  bg-white rounded-[9px] flex justify-center items-center px-[20px]"
+                    className="grow bg-white rounded-[9px] flex justify-center items-center px-[20px]"
                     key={index}
                   >
                     <Image

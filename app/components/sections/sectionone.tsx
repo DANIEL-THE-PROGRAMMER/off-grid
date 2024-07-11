@@ -1,45 +1,61 @@
+"use client";
 
 import Image from "next/image";
 import { ImageParallax } from "../imageparallax";
 import { TextWrapper } from "../textwrapper";
+import { useRef, useEffect } from "react";
 
 export const SectionOne = () => {
-    return (
-      <div className="updown bg-black p-[120px] pb-[500px] min-h-[100vh]">
-        <div className="flex items-end ">
-          <div className="flex flex-col p-[108px] pr-[10px] grow min-h-[200px] bg-[#CEFA05] uppercase">
-            <div className="bg-black py-[10px]">
-              <h3 className="font-supr text-[57.839px] text-center">
-                <TextWrapper fg={`#fff`}>Alex Dickinson</TextWrapper>
-              </h3>
-            </div>
-            <span className="flex flex-col font-supr text-[57.839px]  text-right italic">
-              <TextWrapper fg={`black`}>message from our</TextWrapper>
-              <TextWrapper fg={`black`}>Founder and Head </TextWrapper>
-              <TextWrapper fg={`black`}>of Development, </TextWrapper>
-            </span>
+  const ref = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    let height = ref.current?.getBoundingClientRect().height
+    let top = ref.current?.offsetTop
+    if(height && top){
+      let total = (top / height) * 0.9
+      console.log(total)
+    }
+    console.log(height)
+
+  }, []);
+
+  return (
+    <div
+      className="updown bg-black p-[20px] md:p-[120px] pb-[500px] min-h-[100vh]"
+      ref={ref}
+    >
+      <div className="flex items-end ">
+        <div className="flex flex-col p-[20px] md:p-[108px] pr-[10px] grow min-h-[200px] bg-[#CEFA05] uppercase">
+          <div className="bg-black py-[10px]">
+            <h3 className="font-supr text-[38px] md:text-[57.839px] text-center">
+              <TextWrapper fg={`#fff`}>Alex Dickinson</TextWrapper>
+            </h3>
           </div>
-          <div className="w-[50%] h-[90vh] bg-[#CEFA05] flex justify-center  shrink-0">
-            <div className="h-full relative w-[92%] overflow-hidden">
-              <ImageParallax>
-                <Image src="/assets/image 50.png" alt="" fill sizes="100vw" />
-              </ImageParallax>
-            </div>
-          </div>
-        </div>
-        <div className="mt-[71px]">
-          
-          <p className="flex whitespace-pre-lin font-semibold text-[20px] font-lato leading-[32.8px]">
-            {WrittenText}
-          </p>
-          <span className="text-[28px] font-bold leading-[45.92px] mt-[33px] inline-block">
-            <TextWrapper fg={`#CEFA05`}>Read less..</TextWrapper>
-            
+          <span className="flex flex-col font-supr text-[38px] md:text-[57.839px]  text-right italic">
+            <TextWrapper fg={`black`}>message from our</TextWrapper>
+            <TextWrapper fg={`black`}>Founder and Head </TextWrapper>
+            <TextWrapper fg={`black`}>of Development, </TextWrapper>
           </span>
         </div>
+        <div className="hidden w-[50%] h-[90vh] bg-[#CEFA05] md:flex justify-center  shrink-0">
+          <div className="h-full relative w-[92%] overflow-hidden">
+            <ImageParallax>
+              <Image src="/assets/image 50.png" alt="" fill sizes="100vw" />
+            </ImageParallax>
+          </div>
+        </div>
       </div>
-    );
-}
+      <div className="mt-[71px]">
+        <p className="flex whitespace-pre-lin font-semibold text-[20px] font-lato leading-[32.8px]">
+          
+        </p>
+        <span className="text-[28px] font-bold leading-[45.92px] mt-[33px] inline-block">
+          <TextWrapper fg={`#CEFA05`}>Read less..</TextWrapper>
+        </span>
+      </div>
+    </div>
+  );
+};
 
 const WrittenText = `Hey business owner,
 

@@ -6,10 +6,10 @@ import { HeaderWrapper } from "../headerwrapper";
 export const WhySection = () => {
   return (
     <>
-      <div className="bg-main py-[239px]">
+      <div className="bg-main md:py-[239px] py-[100px]">
         <div className="flex justify-center">
-          <h3 className="flex flex-col  leading-[81px] font-supr italic text-[74px] items-center justify-center uppercase">
-            <span>
+          <h3 className="flex flex-col  leading-[81px] font-supr italic text-[64px] md:text-[74px] items-center justify-center uppercase md:px-0 px-[20px]">
+            <span className="md:text-left text-center">
               <TextWrapper fg="black"> Why Tradies choose to work</TextWrapper>
             </span>
             <span>
@@ -17,8 +17,8 @@ export const WhySection = () => {
             </span>
           </h3>
         </div>
-        <div className="flex container mx-auto mt-[50px] items-center gap-[120px]">
-          <div className="w-[50%] flex flex-col">
+        <div className="flex container mx-auto mt-[50px] items-center gap-[120px] md:flex-row flex-col">
+          <div className="md:w-[50%] md:px-0 px-[20px] flex flex-col">
             <h5 className="flex flex-col text-[30px] leading-[44px] font-bold font-lato">
               <span>
                 <TextWrapper fg="black">
@@ -33,7 +33,7 @@ export const WhySection = () => {
               <TextWrapper fg="black">{Texts}</TextWrapper>
             </p>
           </div>
-          <div className="w-[50%] shrink-0 whyclipimage overflow-hidden">
+          <div className="md:w-[50%] shrink-0 whyclipimage overflow-hidden">
             <ImageParallax>
               <Image
                 src="/assets/image 11.png"

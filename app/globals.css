@@ -33,7 +33,6 @@
 .stroketext {
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #cefa05;
-  font-size: 170px;
   font-weight: 400;
   line-height: normal;
   color: transparent;
@@ -146,6 +145,9 @@
   left: calc(calc(var(--panel-width) * 5) - 6px);
 }
 
+.newclip{
+  clip-path: polygon(0 0, 100% 0, 100% 2967px, 0% 100%);
+}
 
 
 .page-main {

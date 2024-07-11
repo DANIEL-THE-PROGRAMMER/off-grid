@@ -6,9 +6,9 @@ import { TextWrapper } from "../textwrapper";
 export const Resources = () => {
     return (
       <>
-        <div className="bg-black">
-          <div className="py-[266px]">
-            <h2 className="flex flex-col text-[64px] italic leading-[81px] font-supr  items-center uppercase">
+        <div className="bg-black md:px-0 px-[20px]">
+          <div className="md:py-[266px] py-[100px]">
+            <h2 className="flex flex-col text-[46px] md:text-[64px] italic leading-[81px] font-supr items-center uppercase">
               <span>
                 <TextWrapper fg="white">
                   Resources to Help you Grow Your Building
@@ -18,7 +18,7 @@ export const Resources = () => {
                 <TextWrapper fg="white">Or Trades Business</TextWrapper>
               </span>
             </h2>
-            <div className="flex container mx-auto gap-[35px] mt-[63px]">
+            <div className="flex md:flex-row flex-col container mx-auto gap-[35px] mt-[63px]">
               <div className="grow">
                 <Image
                   src="/assets/Group 589.png"

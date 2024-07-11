@@ -4,15 +4,15 @@ import { TextWrapper } from "../../textwrapper";
 export const RecentBlog = () => {
   return (
     <>
-      <div className="bg-main">
+      <div className="bg-main md:px-0 px-[20px]">
         <div className="pt-[210px] pb-[260px]">
           <h2 className="font-supr text-center  italic text-[74px] uppercase">
             <TextWrapper fg="black">Recent blogs</TextWrapper>
           </h2>
           <div className="mt-[68px]">
             <div className="container mx-auto flex flex-col gap-[46px]">
-              <div className="flex gap-[56px]">
-                <div className="w-[50%] flex flex-col">
+              <div className="flex gap-[56px] md:flex-row flex-col">
+                <div className="md:w-[50%] flex flex-col">
                   <Image
                     src="/assets/recent-blog_1.png"
                     alt=""
@@ -54,7 +54,7 @@ export const RecentBlog = () => {
                     </div>
                   </div>
                 </div>
-                <div className="w-[50%] flex flex-col">
+                <div className="md:w-[50%] flex flex-col">
                   <Image
                     src="/assets/recent-blog_2.png"
                     alt=""
@@ -97,7 +97,7 @@ export const RecentBlog = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex gap-[48px]">
+              <div className="flex gap-[48px] md:flex-row flex-col">
                 {blogImages.map((image: string, index: number) => {
                   return (
                     <div className="flex flex-col grow" key={index}>

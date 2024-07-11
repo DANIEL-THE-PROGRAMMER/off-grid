@@ -12,8 +12,8 @@ export const OurMarket = () => {
           sizes="100vw"
           className=""
         />
-        <div className="gradient3 relative z-20 pt-[293px] pb-[287px] flex flex-col items-center">
-          <h2 className="font-supr flex flex-col items-center leading-[1] italic text-[74px] font-extrabold">
+        <div className="gradient3 relative z-20 pt-[100px] md:pt-[293px] md:px-0 px-[20px] pb-[287px] flex flex-col items-center">
+          <h2 className="font-supr flex flex-col items-center leading-[1] italic text-[28px] md:text-[74px] font-extrabold">
             <span>
               <TextWrapper fg="black">
                 Our Advanced Growth System is a custom tailored,
@@ -34,14 +34,13 @@ export const OurMarket = () => {
           <div className="mt-[28px] mb-[79px]">
             <span className="text-[30px] font-bold leading-[37px] font-lato">
               <TextWrapper fg="black">
-                It{"'"}s essentially like having an entire marketing team at your
-              disposal
+                It{"'"}s essentially like having an entire marketing team at
+                your disposal
               </TextWrapper>
-             
             </span>
           </div>
           <div className="flex flex-col gap-[30px] items-center">
-            <div className="flex items-center justify-center gap-[48px]">
+            <div className="flex md:flex-row flex-col items-center justify-center gap-[48px]">
               {Markets.slice(0, 3).map((market: string, index: number) => {
                 return (
                   <div
@@ -63,16 +62,13 @@ export const OurMarket = () => {
                       />
                     </svg>
                     <span className="mb-[8px]">
-                      <TextWrapper fg="black">
-                        
-                      {market}
-                      </TextWrapper>
+                      <TextWrapper fg="black">{market}</TextWrapper>
                     </span>
                   </div>
                 );
               })}
             </div>
-            <div className="flex items-center justify-center gap-[48px]">
+            <div className="flex md:flex-row flex-col  items-center justify-center gap-[48px]">
               {Markets.slice(3, Markets.length).map(
                 (market: string, index: number) => {
                   return (

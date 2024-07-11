@@ -3,12 +3,9 @@
 import Image from "next/image";
 
 import { HeaderWrapper } from "../headerwrapper";
-import {ImageParallax} from "../imageparallax"
-
+import { ImageParallax } from "../imageparallax";
 
 const Header = () => {
-  
-
   return (
     <header className="bg-[#CEFA05]">
       <HeaderWrapper>
@@ -30,12 +27,12 @@ const Header = () => {
 
           <div className="w-full relative z-40 pt-[140px] pb-[244px] flex justify-center ">
             <div className="flex flex-col items-center">
-              <div className="flex">
-                <div className="flex flex-col left">
-                  <h1 className="headertitle overflow-y-hidden stroketext font-supr italic">
+              <div className="flex md:flex-row flex-col items-center">
+                <div className="flex flex-col md:left items-center">
+                  <h1 className="headertitle overflow-y-hidden stroketext md:text-[170px] text-[88px] font-supr italic">
                     TRADIE
                   </h1>
-                  <span className="flex flex-col tracking-[-1px] text-white leading-[38px] italic text-[34px] text-right font-supr font-[400] uppercase">
+                  <span className="md:flex hidden flex-col tracking-[-1px] text-white leading-[38px] italic md:text-[34px] text-[18px] text-right font-supr font-[400] uppercase">
                     <span className="headertitle inline-block overflow-y-hidden">
                       {"'"}Where Tradies come to get
                     </span>
@@ -46,9 +43,15 @@ const Header = () => {
                       their business
                     </span>
                   </span>
+                  <div className="md:hidden block tracking-[-1px] text-white leading-[38px] italic md:text-[34px] text-[18px] text-right font-supr font-[400] uppercase">
+                    <span className="headertitle">
+                      Where Tradies come to get discovered online and grow their
+                      business
+                    </span>
+                  </div>
                 </div>
-                <div className="h-[95%]   w-[14px] bg-[#CEFA05] rotate-[11.5deg] ml-[101px] mr-[50px]"></div>
-                <h1 className="text-[170px] right text-[#CEFA05] font-supr italic flex flex-col leading-[1] headertitle">
+                <div className="h-[95%]   w-[14px] bg-[#CEFA05] rotate-[11.5deg] ml-[80px] md:ml-[101px] mr-[50px]"></div>
+                <h1 className="text-[88px] md:text-[170px] right text-[#CEFA05] font-supr italic flex flex-col leading-[1] headertitle">
                   <span className="headertitle overflow-y-hidden">GROWTH</span>
                   <span className="headertitle overflow-y-hidden">PARTNER</span>
                 </h1>

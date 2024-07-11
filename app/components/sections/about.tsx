@@ -12,9 +12,9 @@ export const AboutOffGrid = () => {
           className="z-10"
           fill
         />
-        <div className="pt-[178px] pb-[191px] mx-auto container flex z-20  relative gap-[110px] items-center">
-          <div className="w-[50%] flex flex-col items-start">
-            <h3 className="text-black font-supr text-[74px] italic leading-[81px] uppercase ">
+        <div className="pt-[178px] pb-[191px] mx-auto container md:flex z-20 flex-col relative gap-[110px] items-center md:px-0 px-[20px]">
+          <div className="md:w-[50%] flex flex-col items-start">
+            <h3 className="text-black font-supr text-[58px] md:text-[74px] italic leading-[81px] uppercase ">
               <TextWrapper fg="black">About off grid</TextWrapper>
             </h3>
             <div className="my-[33px]">
@@ -43,7 +43,7 @@ So what does this mean for you?`}</p>
               <TextWrapper fg="white">Heres our promise</TextWrapper>
             </button>
           </div>
-          <div className="w-[50%] shrink-0 ">
+          <div className="md:w-[50%] shrink-0 ">
             <Image
               src="/assets/image 47.png"
               layout="responsive"

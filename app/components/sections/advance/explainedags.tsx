@@ -6,13 +6,13 @@ export const ExplainedAgs = () => {
     <>
       <div className="relative">
         <Image src="" alt="" fill sizes="100vw" className="" />
-        <div className="gradient1 relative z-20 pt-[293px] pb-[287px]">
+        <div className="gradient1 md:px-0 px-[20px] relative z-20 pt-[293px] pb-[287px]">
           <div className="container mx-auto items-center">
             <div className="flex flex-col items-center">
               <h3 className="uppercase italic text-[74px] font-supr">
                 <TextWrapper fg="black">Ours AGS Explained</TextWrapper>
               </h3>
-              <p className="whitespace-pre-line text-[28px] font-lato leading-[34px] text-center px-[80px]">{`
+              <p className="whitespace-pre-line text-[28px] font-lato leading-[34px] text-center md:px-[80px]">{`
               Our Advanced Growth System, is a custom made strategy that utilises a combination of inbound and outbound marketing tactics. Our objective is to take you from invisible to visible in the online space and get your business in front of hungry prospects currently looking for your services.
 
 Our nurturing systems of email and social media strategy are also tools we utilise to build awareness around your brand and transform your business into a reputable service provider that wins you customers like clock work.`}</p>
@@ -23,10 +23,10 @@ Our nurturing systems of email and social media strategy are also tools we utili
                   return (
                     <div
                       key={index}
-                      className="bg-white flex p-[76px] gap-[100px] items-center "
+                      className="bg-white flex p-[76px] gap-[100px] items-center md:flex-row flex-col"
                     >
                       {arg.pos === "left" && (
-                        <div className="w-[50%] shrink-0 whyclipimage">
+                        <div className="md:w-[50%] shrink-0 whyclipimage">
                           <Image
                             src={`${arg.image}`}
                             alt=""
@@ -40,7 +40,7 @@ Our nurturing systems of email and social media strategy are also tools we utili
                           />
                         </div>
                       )}
-                      <div className="w-[50%] flex flex-col items-left">
+                      <div className="md:w-[50%] flex flex-col items-left">
                         <span className="text-[100px] font-supr italic leading-[1]">
                           <TextWrapper fg="black">{arg.title}</TextWrapper>
                         </span>
@@ -79,8 +79,8 @@ Our nurturing systems of email and social media strategy are also tools we utili
                 </button>
               </div>
               <div className="container mx-auto">
-                <div className="bg-white flex p-[76px] gap-[100px] items-center ">
-                  <div className="w-[50%] flex flex-col items-left">
+                <div className="bg-white flex md:flex-row flex-col p-[76px] gap-[100px] items-center ">
+                  <div className="md:w-[50%] flex flex-col items-left">
                     <span className="text-[100px] font-supr italic leading-[1]">
                       <TextWrapper fg="black">Branding</TextWrapper>
                     </span>
@@ -135,7 +135,7 @@ Our nurturing systems of email and social media strategy are also tools we utili
                 <div className="container mx-auto">
                   <div className="relative bg-black p-[79px]">
                     <Image
-                      className="absolute right-[-100px]"
+                      className="absolute md:block hidden right-[-100px]"
                       src="/assets/Construction-Helmet-Mockup 1.png"
                       alt=""
                       width={401}

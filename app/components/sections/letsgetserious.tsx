@@ -20,12 +20,12 @@ export const LetsGetSerious = () => {
           </div>
           <div className="absolute bottom-0 w-full h-full bg-black"></div>
           <div className="mb-[54px] relative z-20">
-            <h3 className="text-[74px] font-supr italic text-center uppercase">
+            <h3 className="text-[48px] md:text-[74px] font-supr italic text-center uppercase">
               <TextWrapper fg="white">Let{"'"}s get serious</TextWrapper>
             </h3>
           </div>
-          <div className="flex gap-[92px] relative z-20 container mx-auto">
-            <div className="w-[50%] p-[65px] bg-main flex flex-col items-center">
+          <div className="flex gap-[92px] relative z-20 container mx-auto md:flex-row flex-col md:px-0 px-[20px]">
+            <div className="md:w-[50%] p-[65px] bg-main flex flex-col items-center">
               <h3 className="text-[80px] font-supr italic text-black uppercase text-center">
                 <TextWrapper fg="black">instagram</TextWrapper>
               </h3>
@@ -83,7 +83,7 @@ export const LetsGetSerious = () => {
                 Become smarter with us
               </button>
             </div>
-            <div className="w-[50%] p-[65px] bg-main flex flex-col items-center">
+            <div className="md:w-[50%] p-[65px] bg-main flex flex-col items-center">
               <h3 className="text-[80px] font-supr italic uppercase text-center">
                 <TextWrapper fg="black">AGS</TextWrapper>
               </h3>
@@ -133,8 +133,7 @@ export const LetsGetSerious = () => {
                 </span>
               </div>
               <button className="outline-none border-none text-main font-lato font-bold leading-[31px] min-w-[215px] px-[35px] min-h-[63px] flex justify-center items-center rounded-[10px] mt-[48px]">
-                <TextWrapper fg="black">
-                  Read more</TextWrapper>
+                <TextWrapper fg="black">Read more</TextWrapper>
               </button>
             </div>
           </div>

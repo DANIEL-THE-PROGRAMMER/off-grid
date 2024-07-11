@@ -14,17 +14,17 @@ export const PopularBlog = () => {
             </ImageParallax>
           </div>
         </div>
-        <div className="gradient5 absolute w-full h-full z-10"></div>
-        <div className="pt-[210px] pb-[260px] relative z-20">
+        <div className="gradient5  absolute w-full h-full z-10"></div>
+        <div className="pt-[210px] pb-[260px] relative z-20 md:px-0 px-[20px]">
           <h2 className="font-supr text-center italic text-[74px] uppercase ">
             <TextWrapper fg="white">Popular blogs</TextWrapper>
           </h2>
           <div className="mt-[68px]">
             <div className="container mx-auto flex flex-col gap-[46px]">
-              <div className="flex gap-[56px]">
+              <div className="flex gap-[56px] md:flex-row flex-col">
                 {blogImages.slice(0, 2).map((img: string, index: number) => {
                   return (
-                    <div key={index} className="w-[50%] flex flex-col">
+                    <div key={index} className="md:w-[50%] flex flex-col">
                       <Image
                         src={`${img}`}
                         alt=""
@@ -67,7 +67,7 @@ export const PopularBlog = () => {
                   );
                 })}
               </div>
-              <div className="flex gap-[48px]">
+              <div className="flex gap-[48px] md:flex-row flex-col">
                 {blogImages
                   .slice(2, blogImages.length)
                   .map((image: string, index: number) => {

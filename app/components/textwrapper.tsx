@@ -27,8 +27,6 @@ export const TextWrapper = ({
 
       const text = new SplitType(char, { types: "chars", charClass: "mytext" });
 
-      console.log(text, bg);
-
       gsap.fromTo(
         text.chars,
         {

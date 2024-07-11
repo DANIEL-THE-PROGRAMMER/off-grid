@@ -4,9 +4,9 @@ import { TextWrapper } from "../textwrapper";
 export const PerformanceCheck = () => {
     return (
       <>
-        <div className="bg-white">
-          <div className="py-[200px]">
-            <h3 className="flex flex-col leading-[106px] italic text-[64px] font-supr items-center">
+        <div className="bg-white md:px-0 px-[20px]">
+          <div className="md:py-[200px] py-[100px]">
+            <h3 className="flex flex-col md:leading-[106px] italic text-[48px] md:text-[64px] font-supr items-center">
               <span>
                 <TextWrapper fg="black">
                   Do you think your website could be doing better?
@@ -18,7 +18,7 @@ export const PerformanceCheck = () => {
                 </TextWrapper>
               </span>
             </h3>
-            <div className="flex flex-col mt-[29px] mx-auto container px-[100px]">
+            <div className="flex flex-col mt-[29px] mx-auto container md:px-[100px]">
               <div className="flex flex-col gap-[36px]">
                 <div className="flex flex-col">
                   <span className="inline-block text-[20px] leading-[28px] font-semibold font-lato tracking-[-0.1px] mb-[15px]">

@@ -21,7 +21,7 @@ export const Section = ({ children }: { children: React.ReactNode }) => {
     <>
       <div
         ref={ref}
-        className="p-[214px] pt-[200px] px-[150px] gradient1 relative z-0"
+        className="md:p-[214px] p-[20px] md:pt-[200px] pt-[100px] md:px-[150px] px-[20px] gradient1 relative z-0 "
       >
         {children}
       </div>

@@ -3,8 +3,8 @@ import { Facebook, Instagram, LogoSvg } from "@/app/icon";
 export const Footer = () => {
   return (
     <>
-      <div className="bg-black">
-        <div className="container mx-auto pt-[300px] flex gap-[90px]">
+      <div className="bg-black px-[20px] md:px-0">
+        <div className="container mx-auto pt-[300px] flex md:flex-row flex-col gap-[90px]">
           <div className="flex flex-col pt-[25px]">
             <LogoSvg />
             <span className="text-[18px] leading-[30px] font-semibold text-[#AEAEAE] mt-[40px] mb-[30px]">

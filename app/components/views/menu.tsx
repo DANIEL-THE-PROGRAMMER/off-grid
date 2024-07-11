@@ -54,7 +54,7 @@ export const Menu = () => {
                         setOpen(!isOpen);
                       }, 1000);
                     }}
-                    className="last:border-b-none last:border-b-transparent first:pt-0 py-[26px] border-b-[0.932px] border-b-[rgba(255,255,255,0.38)] italic font-supr text-[124.843px] font-bold leading-[0.9] links translate-y-[20px] opacity-0 transition-colors hover:text-main"
+                    className="last:border-b-none last:border-b-transparent first:pt-0 py-[26px] border-b-[0.932px] border-b-[rgba(255,255,255,0.38)] italic font-supr text-[74px] md:text-[124.843px] font-bold leading-[0.9] links translate-y-[20px] opacity-0 transition-colors hover:text-main md:px-0 px-[20px]"
                   >
                     <Link href={`/${link.linkroute}`} className="menustroke">
                       {link.name}
@@ -63,7 +63,7 @@ export const Menu = () => {
                 );
               })}
             </ul>
-            <div className="border-t-[rgba(255,255,255,0.38)] border-t-[1px] pt-[40px] pb-[54px] justify-between flex items-center font-lato">
+            <div className="border-t-[rgba(255,255,255,0.38)] border-t-[1px] pt-[40px] pb-[54px] justify-between flex md:flex-row flex-col items-center font-lato md:gap-0 gap-[25px]">
               <span className="text-main font-semibold text-[18px] font-lato">
                 Digital Marketing
               </span>

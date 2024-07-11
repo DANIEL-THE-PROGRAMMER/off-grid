@@ -20,8 +20,8 @@ export const DoSection = () => {
           </div>
         </div>
 
-        <div className="container mx-auto flex items-center relative z-20">
-          <div className="w-[50%] shrink-0 ">
+        <div className="container mx-auto flex md:flex-row flex-col  items-center relative z-20">
+          <div className="md:w-[50%] shrink-0 ">
             <Image
               src="/assets/image (2).png"
               layout="responsive"
@@ -35,8 +35,8 @@ export const DoSection = () => {
               }}
             />
           </div>
-          <div className="w-[50%] shrink-0 flex flex-col">
-            <h2 className="text-[62px] uppercase font-supr leading-[103px] italic ">
+          <div className="md:w-[50%] md:px-0 px-[20px] shrink-0 flex flex-col">
+            <h2 className="text-[42px] md:text-[62px] uppercase font-supr leading-[103px] italic ">
               <TextWrapper fg="black">Rather do-it-yourself? </TextWrapper>
             </h2>
             <p className="flex flex-col italic text-[35px] leading-[55px] font-supr mt-[15px]">
@@ -60,26 +60,26 @@ export const DoSection = () => {
               </span>
             </p>
             <div className="mt-[52px] flex flex-col gap-[30px]">
-              <div className="flex items-center gap-[36px]">
+              <div className="flex md:flex-row flex-col items-center gap-[36px]">
                 <input
-                  className="border-[1.142px] border-[#BBB] min-h-[62px] rounded-[8px] grow px-[24px]"
+                  className="border-[1.142px] border-[#BBB] min-h-[62px] md:w-unset w-[100%] rounded-[8px] grow px-[24px]"
                   type="text"
                   placeholder="Name*"
                 />
                 <input
-                  className="border-[1.142px] border-[#BBB] min-h-[62px] rounded-[8px] grow px-[24px]"
+                  className="border-[1.142px] border-[#BBB] min-h-[62px] md:w-unset w-[100%] rounded-[8px] grow px-[24px]"
                   type="text"
                   placeholder="Email address*"
                 />
               </div>
-              <div className="flex items-center gap-[36px]">
+              <div className="flex md:flex-row flex-col items-center gap-[36px]">
                 <input
-                  className="border-[1.142px] border-[#BBB] min-h-[62px] rounded-[8px] grow px-[24px]"
+                  className="border-[1.142px] border-[#BBB] min-h-[62px] md:w-unset w-[100%] rounded-[8px] grow px-[24px]"
                   type="text"
                   placeholder="Mobile Number*"
                 />
                 <input
-                  className="border-[1.142px] border-[#BBB] min-h-[62px] rounded-[8px] grow px-[24px]"
+                  className="border-[1.142px] border-[#BBB] min-h-[62px] md:w-unset w-[100%] rounded-[8px] grow px-[24px]"
                   type="text"
                   placeholder="Website*"
                 />
